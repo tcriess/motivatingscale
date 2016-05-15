@@ -2,13 +2,16 @@
 
    Motivational scale
 
-   Required:
+   Required Arduino libraries:
+   https://github.com/bogde/HX711
+   http://fastled.io
+
+   Required hardware:
    1 cheap bathroom scale,
    1 LED strip (WS2812B controllers or similar)
    1 Arduino nano or equivalent
    1 HX711 ADC
-
-   Mode:
+   1 9V battery
 
 */
 
