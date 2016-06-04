@@ -189,9 +189,6 @@ void loop() {
           break;
         }
 
-        //for(int i=0;i<NUMBER_LEDS;i++) {
-        //  leds[i] = CRGB::Black;
-        //}
         leds[0].fadeLightBy(128);
         leds[1] = CRGB::Green;
         leds[1].fadeLightBy(128);
@@ -272,10 +269,9 @@ void loop() {
         Serial.println("Saved data");
 #endif
 
-        leds[0] = CRGB::Black; //.fadeLightBy(128);
-        leds[1] = CRGB::Black; //.fadeLightBy(128);
+        leds[0] = CRGB::Black;
+        leds[1] = CRGB::Black;
         leds[userno] = CRGB::Blue;
-        //leds[userno].fadeLightBy(128);
 
         FastLED.show();
 
@@ -345,17 +341,5 @@ void loop() {
       FastLED.delay(10000);
   }
 
-  /*
-    int eeAddress = sizeof(SetupData);
-    for(int i=0; i<NUMBER_USERS; i++) {
-      EEPROM.put(eeAddress, Users[i]);
-      eeAddress += sizeof(UserData);
-    }
-  */
-  //leds[0] = CRGB::Blue;leds[1] = CRGB::Black; FastLED.show(); delay(30);
-  //leds[0] = CRGB::Black;leds[1] = CRGB::Red; FastLED.show(); delay(30);
-
-  //delay(5000);
-  //scale.power_up();
 }
 
